@@ -3,36 +3,36 @@
         font-family: "Roboto";
         font-weight: normal;
         font-style: normal;
-        src:url("fonts/roboto-regular.ttf") format("woff");;
+        src:url("custom/fonts/roboto-regular.ttf") format("woff");;
     }
     @font-face {
         font-family: "Roboto";
         font-weight: normal;
         font-style: italic;
-        src:url("fonts/roboto-italic.ttf") format("woff");;
+        src:url("custom/fonts/roboto-italic.ttf") format("woff");;
     }
     @font-face {
         font-family: "Roboto";
         font-weight: bold;
-        src:url("fonts/roboto-bold.ttf") format("woff");;
+        src:url("custom/fonts/roboto-bold.ttf") format("woff");;
     }
 
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: normal;
-        src:url("fonts/consolas-regular.ttf") format("woff");;
+        src:url("custom/fonts/consolas-regular.ttf") format("woff");;
     }
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: italic;
-        src:url("fonts/consolas-italic.ttf") format("woff");;
+        src:url("custom/fonts/consolas-italic.ttf") format("woff");;
     }
     @font-face {
         font-family: "Consolas";
         font-weight: bold;
-        src:url("fonts/consolas-bold.ttf") format("woff");;
+        src:url("custom/fonts/consolas-bold.ttf") format("woff");;
     }
 
     /* Change text font */
@@ -100,14 +100,21 @@
         },
         tex2jax: {
             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
         },
-        displayAlign: 'center',
+        MathML: {
+            extensions: ['content-mathml.js']
+        },
         "HTML-CSS": {
             availableFonts: ["TeX"],
+            imageFont: null,
             preferredFont: "TeX",
-            styles: {'.MathJax_Display': {"margin": 4}}
-        }
+            webFont: "TeX",
+            styles: {'.MathJax_Display': {"margin": "10px"}},
+            linebreaks: { automatic: true }
+        },
     });
     MathJax.Hub.Queue(
         ["resetEquationNumbers", MathJax.InputJax.TeX],
