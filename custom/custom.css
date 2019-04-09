@@ -211,7 +211,7 @@
         font-size: 12px !important;
         line-height: 130% !important;
     }
-    .highlight .k, .highlight .kn, .highlight .kc, .highlight .o, .highlight .ow {
+    .highlight .k, .highlight .bp, .highlight .kn, .highlight .kc, .highlight .o, .highlight .ow {
         color: #B43673 !important;
         font-weight: normal !important;
     }
@@ -219,15 +219,20 @@
         color: #3482f5 !important;
         font-weight: normal !important;
     }
-    .highlight .nn, .highlight .nf, .highlight .p, .highlight .n, .highlight .sa {
+    .highlight .nn, .highlight .nc, .highlight .nf, .highlight .p, .highlight .n, .highlight .sa {
         color: #000 !important;
         font-weight: normal !important;
     }
-    .highlight .s1, .highlight .s2 {
+    .highlight .s1, .highlight .s2, .highlight .si {
         color: #479035 !important;
+        font-weight: normal !important;
     }
     .highlight .nb {
         color: #790EAD !important;
+    }
+    .highlight .c1 {
+        color: #927E41 !important;
+        font-style: normal !important;
     }
 </style>
 
