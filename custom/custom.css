@@ -3,59 +3,170 @@
         font-family: "Roboto";
         font-weight: normal;
         font-style: normal;
-        src:url("custom/fonts/roboto-regular.ttf") format("woff");;
+        src:url("fonts/roboto-regular.ttf") format("woff");;
     }
     @font-face {
         font-family: "Roboto";
         font-weight: normal;
         font-style: italic;
-        src:url("custom/fonts/roboto-italic.ttf") format("woff");;
+        src:url("fonts/roboto-italic.ttf") format("woff");;
     }
     @font-face {
         font-family: "Roboto";
         font-weight: bold;
-        src:url("custom/fonts/roboto-bold.ttf") format("woff");;
+        src:url("fonts/roboto-bold.ttf") format("woff");;
     }
 
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: normal;
-        src:url("custom/fonts/consolas-regular.ttf") format("woff");;
+        src:url("fonts/consolas-regular.ttf") format("woff");;
     }
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: italic;
-        src:url("custom/fonts/consolas-italic.ttf") format("woff");;
+        src:url("fonts/consolas-italic.ttf") format("woff");;
     }
     @font-face {
         font-family: "Consolas";
         font-weight: bold;
-        src:url("custom/fonts/consolas-bold.ttf") format("woff");;
+        src:url("fonts/consolas-bold.ttf") format("woff");;
     }
+
+    @font-face {
+        font-family: "SF Mono";
+        font-weight: normal;
+        font-style: normal;
+        src:url("fonts/sfmono-regular.otf") format("woff");;
+    }
+    @font-face {
+        font-family: "SF Mono";
+        font-weight: normal;
+        font-style: italic;
+        src:url("fonts/sfmono-italic.ttf") format("woff");;
+    }
+    @font-face {
+        font-family: "SF Mono";
+        font-weight: bold;
+        src:url("fonts/sfmono-bold.ttf") format("woff");;
+    }
+
 
     /* Change text font */
     div.text_cell_render {
         font-family: Roboto;
-        font-size: 10.5pt;
+        font-size: 14px;
         height: 100%;
     }
 
     /* Change code font */
-    .CodeMirror {
-        font-family: Consolas, monospace;
-        font-size: 10.5pt;
+    .CodeMirror pre {
+        font-family: SF Mono, monospace;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+        line-height: 130%;
+        /*background: #fff;*/
     }
 
+    .CodeMirror-linenumber {
+        background: #fff;
+        font-family: SF Mono, monospace;
+        font-size: 12px;
+    }
+
+    /* Font changes for output needed for tqdm progress bar */
     div.output_area pre {
-        font-family: Consolas, monospace;
-        font-size: small;
+        font-family: SF Mono, monospace;
+        font-size: 12px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    div.output_subarea {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 0px;
+    }
+
+    /* Font changes for widgets, useful for tqdm progress bar */
+    label.widget-label {
+        font-size: 12px;
+    }
+
+    div.p-Widget.jupyter-widgets.widget-inline-hbox.widget-html {
+        font-size: 12px;
+    }
+
+    div.jupyter-widgets-view {
+        font-family: SF Mono, monospace;
+    }
+
+    div.bk-root, div.bk-plot-wrapper, div.bk-canvas-overlays {
+        font-family: SF Mono, monospace;
+    }
+
+    div.bk-canvas-events {
+        display: none;
+    }
+
+    /* Syntax highlighting */
+    .cm-s-ipython span.cm-keyword {
+        color: #B43673;
+        font-weight: normal;
+    }
+
+    .cm-s-ipython span.cm-number {
+        color: #3482f5;
+    }
+
+    .cm-s-ipython span.cm-string {
+        color: #479035;
+    }
+
+    .cm-s-ipython span.cm-def {
+        color: #000;
+    }
+
+    .cm-s-ipython span.cm-builtin {
+        color: #790EAD;
+    }
+
+    .cm-s-ipython span.cm-operator {
+        color: #B43673;
+    }
+
+    .cm-s-ipython span.cm-comment {
+        font-style: normal;
+        color: #927E41;
+    }
+
+    .cm-s-ipython div.CodeMirror-selected {
+        background: #D4E3FC !important;
+    }
+
+    /* Change debugging colors */
+    .ansi-green-fg {
+        color: #479035;
+    }
+
+    .ansi-cyan-fg {
+        color: #3482f5;
+    }
+
+    .ansi-cyan-fg {
+        color: #000;
+    }
+
+    .ansi-red-fg {
+        color: #c74230;
     }
 
     /* Change code font */
     .rendered_html code {
-        font-family: Consolas, monospace;
+        font-family: SF Mono, monospace;
     }
 
     /* Disable prompt */
