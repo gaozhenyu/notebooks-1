@@ -3,54 +3,54 @@
         font-family: "Roboto";
         font-weight: normal;
         font-style: normal;
-        src:url("fonts/roboto-regular.ttf") format("woff");;
+        src:url("custom/fonts/roboto-regular.ttf") format("woff");;
     }
     @font-face {
         font-family: "Roboto";
         font-weight: normal;
         font-style: italic;
-        src:url("fonts/roboto-italic.ttf") format("woff");;
+        src:url("custom/fonts/roboto-italic.ttf") format("woff");;
     }
     @font-face {
         font-family: "Roboto";
         font-weight: bold;
-        src:url("fonts/roboto-bold.ttf") format("woff");;
+        src:url("custom/fonts/roboto-bold.ttf") format("woff");;
     }
 
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: normal;
-        src:url("fonts/consolas-regular.ttf") format("woff");;
+        src:url("custom/fonts/consolas-regular.ttf") format("woff");;
     }
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: italic;
-        src:url("fonts/consolas-italic.ttf") format("woff");;
+        src:url("custom/fonts/consolas-italic.ttf") format("woff");;
     }
     @font-face {
         font-family: "Consolas";
         font-weight: bold;
-        src:url("fonts/consolas-bold.ttf") format("woff");;
+        src:url("custom/fonts/consolas-bold.ttf") format("woff");;
     }
 
     @font-face {
         font-family: "SF Mono";
         font-weight: normal;
         font-style: normal;
-        src:url("fonts/sfmono-regular.otf") format("woff");;
+        src:url("custom/fonts/sfmono-regular.otf") format("woff");;
     }
     @font-face {
         font-family: "SF Mono";
         font-weight: normal;
         font-style: italic;
-        src:url("fonts/sfmono-italic.ttf") format("woff");;
+        src:url("custom/fonts/sfmono-italic.otf") format("woff");;
     }
     @font-face {
         font-family: "SF Mono";
         font-weight: bold;
-        src:url("fonts/sfmono-bold.ttf") format("woff");;
+        src:url("custom/fonts/sfmono-bold.otf") format("woff");;
     }
 
 
@@ -203,6 +203,7 @@
     }
 </style>
 
+
 <script>
     MathJax.Hub.Config({
         TeX: {
@@ -232,4 +233,13 @@
         ["PreProcess", MathJax.Hub],
         ["Reprocess", MathJax.Hub]
     );
+
+    require(["codemirror/keymap/sublime", "notebook/js/cell", "base/js/namespace"],
+    function(sublime_keymap, cell, IPython) {
+        cell.Cell.options_default.cm_config.keyMap = 'sublime';
+        var cells = IPython.notebook.get_cells();
+        for(var cl=0; cl< cells.length ; cl++){
+            cells[cl].code_mirror.setOption('keyMap', 'sublime');
+        }
+    }
 </script>
