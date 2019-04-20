@@ -3,3 +3,5 @@ This repository contains some notebooks for my own educational purposes, but fee
 
 * [Fast Fourier Transform](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/fast-fourier-transform.ipynb?flush_cache=True)
 * [Normalization Methods in Deep Learning](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/deep-learning-normalization.ipynb?flush_cache=True)
+* [Xavier and Kaiming Initialization](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/deep-learning-initialization.ipynb?flush_cache=True)
+* [Deep Learning Optimizers](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/deep-learning-optimizers.ipynb?flush_cache=True)

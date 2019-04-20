@@ -56,14 +56,13 @@
         font-family: "CMU Sans Serif";
         font-weight: normal;
         font-style: normal;
-        src:url("custom/fonts/cmu-regular.ttf") format("woff");;
+        src:url("custom/fonts/cmu-regular.otf") format("woff");;
     }
     @font-face {
         font-family: "CMU Sans Serif";
         font-weight: bold;
-        src:url("custom/fonts/cmu-bold.ttf") format("woff");;
+        src:url("custom/fonts/cmu-bold.otf") format("woff");;
     }
-
 
     /* Change text font */
     div.text_cell_render {
