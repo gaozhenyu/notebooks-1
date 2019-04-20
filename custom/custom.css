@@ -91,6 +91,13 @@
         border: 0px;
     }
 
+    /* Center plots */
+    .output_png {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
     /* Font changes for widgets, useful for tqdm progress bar */
     label.widget-label {
         font-size: 12px;
