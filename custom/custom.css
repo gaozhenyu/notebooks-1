@@ -52,12 +52,23 @@
         font-weight: bold;
         src:url("custom/fonts/sfmono-bold.otf") format("woff");;
     }
+    @font-face {
+        font-family: "CMU Sans Serif";
+        font-weight: normal;
+        font-style: normal;
+        src:url("custom/fonts/cmu-regular.ttf") format("woff");;
+    }
+    @font-face {
+        font-family: "CMU Sans Serif";
+        font-weight: bold;
+        src:url("custom/fonts/cmu-bold.ttf") format("woff");;
+    }
 
 
     /* Change text font */
     div.text_cell_render {
-        font-family: Roboto, monospace;
-        font-size: 14px;
+        font-family: CMU Sans Serif, monospace;
+        font-size: 15px;
         height: 100%;
     }
 
