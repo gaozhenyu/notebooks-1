@@ -3,70 +3,70 @@
         font-family: "Roboto";
         font-weight: normal;
         font-style: normal;
-        src:url("css/fonts/roboto/roboto-regular.ttf") format("truetype");
+        src:url("../css/fonts/roboto/roboto-regular.ttf") format("truetype");
     }
     @font-face {
         font-family: "Roboto";
         font-weight: normal;
         font-style: italic;
-        src:url("css/fonts/roboto/roboto-italic.ttf") format("truetype");
+        src:url("../css/fonts/roboto/roboto-italic.ttf") format("truetype");
     }
     @font-face {
         font-family: "Roboto";
         font-weight: bold;
         font-style: normal;
-        src:url("css/fonts/roboto/roboto-bold.ttf") format("truetype");
+        src:url("../css/fonts/roboto/roboto-bold.ttf") format("truetype");
     }
 
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: normal;
-        src:url("css/fonts/consolas/consolas-regular.ttf") format("truetype");
+        src:url("../css/fonts/consolas/consolas-regular.ttf") format("truetype");
     }
     @font-face {
         font-family: "Consolas";
         font-weight: normal;
         font-style: italic;
-        src:url("css/fonts/consolas/consolas-italic.ttf") format("truetype");
+        src:url("../css/fonts/consolas/consolas-italic.ttf") format("truetype");
     }
     @font-face {
         font-family: "Consolas";
         font-weight: bold;
         font-style: normal;
-        src:url("css/fonts/consolas/consolas-bold.ttf") format("truetype");
+        src:url("../css/fonts/consolas/consolas-bold.ttf") format("truetype");
     }
 
     @font-face {
         font-family: "SF Mono";
         font-weight: normal;
         font-style: normal;
-        src:url("css/fonts/sfmono/sfmono-regular.ttf") format("truetype");
+        src:url("../css/fonts/sfmono/sfmono-regular.ttf") format("truetype");
     }
     @font-face {
         font-family: "SF Mono";
         font-weight: normal;
         font-style: italic;
-        src:url("css/fonts/sfmono/sfmono-italic.ttf") format("truetype");
+        src:url("../css/fonts/sfmono/sfmono-italic.ttf") format("truetype");
     }
     @font-face {
         font-family: "SF Mono";
         font-weight: bold;
         font-style: normal;
-        src:url("css/fonts/sfmono/sfmono-bold.ttf") format("truetype");
+        src:url("../css/fonts/sfmono/sfmono-bold.ttf") format("truetype");
     }
 
     @font-face {
         font-family: "CMU Sans Serif";
         font-weight: normal;
         font-style: normal;
-        src:url("css/fonts/cmu/cmu-regular.ttf") format("truetype");
+        src:url("../css/fonts/cmu/cmu-regular.ttf") format("truetype");
     }
     @font-face {
         font-family: "CMU Sans Serif";
         font-weight: bold;
         font-style: normal;
-        src:url("css/fonts/cmu/cmu-bold.ttf") format("truetype");
+        src:url("../css/fonts/cmu/cmu-bold.ttf") format("truetype");
     }
 
     /* Change text font */
