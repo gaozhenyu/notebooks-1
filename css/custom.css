@@ -1,0 +1,290 @@
+<style>
+    @font-face {
+        font-family: "Roboto";
+        font-weight: normal;
+        font-style: normal;
+        src:url("css/fonts/roboto/roboto-regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Roboto";
+        font-weight: normal;
+        font-style: italic;
+        src:url("css/fonts/roboto/roboto-italic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-style: normal;
+        src:url("css/fonts/roboto/roboto-bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "Consolas";
+        font-weight: normal;
+        font-style: normal;
+        src:url("css/fonts/consolas/consolas-regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Consolas";
+        font-weight: normal;
+        font-style: italic;
+        src:url("css/fonts/consolas/consolas-italic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Consolas";
+        font-weight: bold;
+        font-style: normal;
+        src:url("css/fonts/consolas/consolas-bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "SF Mono";
+        font-weight: normal;
+        font-style: normal;
+        src:url("css/fonts/sfmono/sfmono-regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "SF Mono";
+        font-weight: normal;
+        font-style: italic;
+        src:url("css/fonts/sfmono/sfmono-italic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "SF Mono";
+        font-weight: bold;
+        font-style: normal;
+        src:url("css/fonts/sfmono/sfmono-bold.ttf") format("truetype");
+    }
+
+    @font-face {
+        font-family: "CMU Sans Serif";
+        font-weight: normal;
+        font-style: normal;
+        src:url("css/fonts/cmu/cmu-regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "CMU Sans Serif";
+        font-weight: bold;
+        font-style: normal;
+        src:url("css/fonts/cmu/cmu-bold.ttf") format("truetype");
+    }
+
+    /* Change text font */
+    div.text_cell_render {
+        font-family: CMU Sans Serif, monospace;
+        font-size: 15px;
+        height: 100%;
+    }
+
+    /* Change code font */
+    .CodeMirror pre {
+        font-family: SF Mono, monospace;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+        line-height: 130%;
+    }
+
+    .CodeMirror-linenumber {
+        background: #fff;
+        font-family: SF Mono, monospace;
+        font-size: 11.5px;
+    }
+
+    /* Font changes for output needed for tqdm progress bar */
+    div.output_area pre {
+        font-family: SF Mono, monospace;
+        font-size: 11.5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    div.output_subarea {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border: 0px;
+    }
+
+    /* Center plots */
+    .output_png {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    /* Font changes for widgets, useful for tqdm progress bar */
+    label.widget-label {
+        font-size: 12px;
+    }
+
+    div.p-Widget.jupyter-widgets.widget-inline-hbox.widget-html {
+        font-size: 12px;
+    }
+
+    div.jupyter-widgets-view {
+        font-family: SF Mono, monospace;
+    }
+
+    div.bk-root, div.bk-plot-wrapper, div.bk-canvas-overlays {
+        font-family: SF Mono, monospace;
+    }
+
+    div.bk-canvas-events {
+        display: none;
+    }
+
+    /* Syntax highlighting */
+    .cm-s-ipython span.cm-keyword {
+        color: #B43673;
+        font-weight: normal;
+    }
+
+    .cm-s-ipython span.cm-number {
+        color: #3482f5;
+    }
+
+    .cm-s-ipython span.cm-string {
+        color: #479035;
+    }
+
+    .cm-s-ipython span.cm-def {
+        color: #000;
+    }
+
+    .cm-s-ipython span.cm-builtin {
+        color: #790EAD;
+    }
+
+    .cm-s-ipython span.cm-operator {
+        color: #B43673;
+        font-weight: normal;
+    }
+
+    .cm-s-ipython span.cm-comment {
+        font-style: normal;
+        color: #927E41;
+    }
+
+    .cm-s-ipython div.CodeMirror-selected {
+        background: #D4E3FC !important;
+    }
+
+    /* Change debugging colors */
+    .ansi-green-fg {
+        color: #479035;
+    }
+
+    .ansi-cyan-fg {
+        color: #3482f5;
+    }
+
+    .ansi-cyan-fg {
+        color: #000;
+    }
+
+    .ansi-red-fg {
+        color: #c74230;
+    }
+
+    /* Change code font */
+    .rendered_html code {
+        font-family: SF Mono, monospace;
+    }
+
+    /* Disable prompt */
+    .prompt{
+        display: None;
+    }
+
+    /* Make container bigger */
+    .container {
+        width:95% !important;
+    }
+
+    /* Change font for headers */
+    div.text_cell_render h1,
+    div.text_cell_render h2,
+    div.text_cell_render h3,
+    div.text_cell_render h4,
+    div.text_cell_render h5,
+    div.text_cell_render h6 {
+        font-family: 'Roboto';
+        font-weight: 300;
+    }
+
+    div.text_cell_render h1 {
+        font-size: 20pt;
+    }
+
+    div.text_cell_render h2 {
+        font-size: 17pt;
+    }
+
+    div.text_cell_render h3 {
+        font-size: 14pt;
+    }
+
+    /* Changes for nbviewer */
+    code, pre {
+        font-family: SF Mono, monospace !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: 12px !important;
+        line-height: 130% !important;
+    }
+    .highlight .k, .highlight .bp, .highlight .kn, .highlight .kc, .highlight .o, .highlight .ow {
+        color: #B43673 !important;
+        font-weight: normal !important;
+    }
+    .highlight .mi, .highlight .mf {
+        color: #3482f5 !important;
+        font-weight: normal !important;
+    }
+    .highlight .nn, .highlight .nc, .highlight .nf, .highlight .p, .highlight .n, .highlight .sa {
+        color: #000 !important;
+        font-weight: normal !important;
+    }
+    .highlight .s1, .highlight .s2, .highlight .si {
+        color: #479035 !important;
+        font-weight: normal !important;
+    }
+    .highlight .nb {
+        color: #790EAD !important;
+    }
+    .highlight .c1 {
+        color: #927E41 !important;
+        font-style: normal !important;
+    }
+</style>
+
+
+<script>
+    MathJax.Hub.Config({
+        TeX: {
+            extensions: ["AMSmath.js"],
+            equationNumbers: { autoNumber: "AMS", useLabelIds: true}
+        },
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        MathML: {
+            extensions: ['content-mathml.js']
+        },
+        "HTML-CSS": {
+            availableFonts: ["TeX"],
+            imageFont: null,
+            preferredFont: "TeX",
+            webFont: "TeX",
+            styles: {'.MathJax_Display': {"margin": "10px"}},
+            linebreaks: { automatic: true }
+        },
+    });
+    MathJax.Hub.Queue(
+        ["resetEquationNumbers", MathJax.InputJax.TeX],
+        ["PreProcess", MathJax.Hub],
+        ["Reprocess", MathJax.Hub]
+    );
+</script>
