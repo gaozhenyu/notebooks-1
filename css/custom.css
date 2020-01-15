@@ -199,22 +199,6 @@
         display: None;
     }
 
-    /* Make container bigger */
-    .container {
-        margin-right: auto;
-        margin-left: auto;
-        color:#333;
-        background:#fff;
-    }
-
-    div.container.container-main {
-        width: 980px !important;
-        padding: 45px !important;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        word-wrap: break-word;
-    }
-
     /* Change font for headers */
     div.text_cell_render h1,
     div.text_cell_render h2,
@@ -239,12 +223,33 @@
     }
 
     /* Changes for nbviewer */
+    div.container.container-main {
+        margin-right: auto;
+        margin-left: auto;
+        color:#333;
+        background:#fff;
+
+        width: 980px !important;
+        padding: 45px !important;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        word-wrap: break-word;
+    }
     code, pre {
         font-family: SF Mono, monospace !important;
         padding-left: 8px !important;
         padding-right: 8px !important;
         font-size: 12px !important;
         line-height: 130% !important;
+    }
+    body {
+        margin-top: 0px;
+    }
+    footer {
+        display: none !important;
+    }
+    .navbar {
+        display: none !important;
     }
     .highlight .k, .highlight .bp, .highlight .kn, .highlight .kc, .highlight .o, .highlight .ow {
         color: #B43673 !important;
