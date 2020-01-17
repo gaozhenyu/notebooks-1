@@ -98,8 +98,8 @@
     div.output_area pre {
         font-family: SF Mono, monospace;
         font-size: 11.5px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     div.output_subarea {
@@ -218,7 +218,7 @@
     }
 
     div.text_cell_render h3 {
-        font-size: 14pt;
+        font-size: 16pt;
     }
 
     /* Changes for nbviewer */
@@ -260,9 +260,10 @@
         color: #000 !important;
         font-weight: normal !important;
     }
-    .highlight .s1, .highlight .s2, .highlight .si {
+    .highlight .s1, .highlight .s2, .highlight .si, .highlight .sd {
         color: #479035 !important;
         font-weight: normal !important;
+        font-style: normal !important;
     }
     .highlight .nb {
         color: #790EAD !important;
