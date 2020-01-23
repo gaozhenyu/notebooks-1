@@ -240,7 +240,8 @@
         padding-right: 8px !important;
         font-size: 12px !important;
         line-height: 140% !important;
-        overflow-x: scroll !important;
+        overflow: none;
+        overflow-x: auto;
     }
     body {
         margin-top: 0px;
