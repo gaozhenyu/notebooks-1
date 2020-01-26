@@ -9,9 +9,9 @@ This repository contains some notes for the paper I read, but feel free to use t
 * [Conditional Neural Processes](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/conditional-neural-processes.ipynb?flush_cache=True) ([Garnelo et al. (2018)](https://arxiv.org/abs/1807.01613))
 * [Neural Processes](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/neural-processes.ipynb?flush_cache=True) ([Garnelo et al. (2018)](https://arxiv.org/abs/1807.01622))
 * [Attentive Neural Processes](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/attentive-neural-processes.ipynb?flush_cache=True) ([Kim et al., 2019](https://arxiv.org/abs/1901.05761))
+* [The Functional Neural Processes](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/functional-neural-processes.ipynb?flush_cache=True) ([Louizos et al., 2019](https://arxiv.org/abs/1906.08324))
 * [The Mechanics of n-Player Differentiable Games](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/mechanics-of-differentiable-games.ipynb?flush_cache=True) ([Balduzzi et al. (2018)](https://arxiv.org/abs/1802.05642))
 * [Evidential Deep Learning](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/evidetial-deep-learning.ipynb?flush_cache=True) ([Sensoy et al. (2018)](https://arxiv.org/abs/1806.01768))
-* [Functional Neural Process](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/functional-neural-process.ipynb?flush_cache=True) ([Louizos et al. (2019)](https://arxiv.org/abs/1906.08324))
 * [On Variational Bounds of Mutual Information](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/on-variational-bounds-of-mutual-information.ipynb?flush_cache=True) ([Poole et al. (2019)](https://arxiv.org/abs/1905.06922))
 * [A Spectral Approach to Gradient Estimation for Implicit Distributions](https://nbviewer.jupyter.org/github/tangbinh/notebooks/blob/master/papers/spectral-score-estimator.ipynb?flush_cache=True) ([Shi et al. (2018)](https://arxiv.org/abs/1806.02925)
 
